@@ -742,4 +742,79 @@ section {
 
 
 
+	/* mmfrfmr */
+
+
+	.card-group {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: stretch;
+	}
+	.card-container {
+		flex: 1;
+		margin: 20px;
+	/*   max-width: 400px; */
+		max-width:100%;
+		background: rgb(255,255,255);
+		background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+		-webkit-box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
+		-moz-box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
+		box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
+	}
+	.card-profile .card-container {
+		min-width:400px;
+		max-width:400px;
+		
+	}
+	.card-bg-img {
+		display: block;
+		min-height: 120px;
+	}
+	.card-profile-img {
+		position: relative;
+	}
+	.card-profile-img > img {
+		height:100px;
+		width:100px;
+		border-radius: 50%;
+		border: 2px solid white;
+		position: absolute;
+		top: -50px;
+		left: 15px;
+	}
+	.card-heading {
+		padding: 10px 30px 0;
+		min-height: 50px;
+	}
+	.card-profile .card-heading {
+		margin-left: calc(100px + 15px);
+	}
+	.card-title, 
+	.card-subtitle {
+		display:block;
+		padding-top: 5px;
+	}
+	.card-title { 
+		font-size: 1.25rem;
+	}
+	.card-body {
+		padding: 20px 30px 30px;
+	}
 	
+	.bg1 {
+		background: url(https://placeimg.com/300/150/nature);
+		background-size: cover;
+	}
+	.bg2 {
+		background: url(https://placeimg.com/300/150/arch);
+		background-size: cover;
+	}
+	.bg3 {
+		background: url(https://placeimg.com/300/150/animals);
+		background-size: cover;
+	}
+	.bg4 {
+		background: url(https://placeimg.com/300/150/tech);
+		background-size: cover;
+	}
