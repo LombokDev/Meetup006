@@ -15,6 +15,7 @@
     <link href="css/demo.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="shine.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
@@ -27,8 +28,8 @@
 				<div class='slide2'></div>
 				<div class='slide3'></div>
 			  </div>
-	<nav>
-			<div class="circle" id="tombolMobile"><i class="fa fa-bars" aria-hidden="true" style="color: white"></i></div>
+	<nav class="menunya">
+			<div class="bulat" id="tombolMobile"><i class="fa fa-bars" aria-hidden="true" style="color: white"></i></div>
 
 			<div class="nveMenu text-left">
 			  <h1 class="text-uppercase mb-1">Menu</h1>
@@ -82,7 +83,7 @@
 
 				<div class="product-img">
 					<!-- <img src="http://bit.ly/2tMBBTd" > -->
-					<div  style="background : white; color :black; height: 100%; width :100%; border-radius: 7px 0 0 7px; padding-left: 50%;">
+					<div  style="background : white; color :black; height: 100%; width :100%; border-radius: 7px 0 0 7px; padding-left: 50% !important;">
 							<div class='label top-left'>
 									<div class='content'>Lombok Dev Meetup 006</div>
 								</div>
@@ -116,12 +117,12 @@
 			</div>			 -->
 </section>
 <section id="screen4">
-<div class="kontainer-peserta">
+<!-- <div class="kontainer-peserta">
 	<div></div>
 	<div></div>
 	<div></div>
-</div>
-<div class="kartu_perserta">
+</div> -->
+<!-- <div class="kartu_perserta">
 	<div class="imagenya">
 		<img src="http://assets.materialup.com/uploads/fc97b003-ba72-4c6e-9dd3-19bf5002c244/preview.jpg" width="100%">
 	</div>
@@ -129,11 +130,11 @@
 		<h3>Arian Saputra</h3>
 		<p>Adalah seorang</p>
 	</div>
-</div>
+</div> -->
 
 </section>
 <section id="screen5"></section>
-<section id="screen6"></section>
+<section id="screen6">syyyfyfuyfy</section>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -142,10 +143,10 @@
 	   $(window).bind('scroll', function() {
 	   var navHeight = $( window ).height() - 70;
 			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('fixed');
+				 $('.menunya').addClass('fixed');
 			 }
 			 else {
-				 $('nav').removeClass('fixed');
+				 $('.menunya').removeClass('fixed');
 			 }
 		});
 	});

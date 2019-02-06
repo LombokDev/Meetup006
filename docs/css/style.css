@@ -10,15 +10,15 @@ html {
 	scroll-behavior: smooth;
   }
 
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0 !important;}
 
 a {text-decoration: none;}
 
 /* This class is added on scroll */
 .fixed {
-	position: fixed; 
+	position: fixed !important; 
 	top: 0; 
-	height: 70px; 
+	height: 70px !important; 
 	z-index: 1;
 }
 
@@ -26,7 +26,6 @@ body {
 	color: #fff;
 	font-family: 'open-sans-bold'; 
 	font-size: 18px;
-	text-align: center;
 }
 
 /* Font Face Settings */
@@ -39,20 +38,21 @@ body {
 }	
 
 /* Navigation Settings */
-nav {
+.menunya {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 70px;
 	background: #fff;
+	text-align: center;
 }
 
-nav li {
+.menunya li {
 	display: inline-block;
-	padding: 24px 10px;
+	padding: 24px 10px !important;
 }
 
-nav li a {
+.menunya li a {
 	color: #757575;
 	text-transform: uppercase;
 }
@@ -71,7 +71,10 @@ section {
 
 #screen2 {
 	background: #6768a2;
-	padding: 10%;
+	padding-top: 1% !important;
+	padding-bottom: 1% !important;
+	padding-left: 14% !important;
+	padding-right: 14% !important;
 }
 
 #screen3 {
@@ -92,11 +95,11 @@ section {
 
 @media only screen and (max-width: 520px) {
 
-	nav li {
+	.menunya li {
 		padding: 24px 4px;
 	}
 
-	nav li a {
+	.menunya li a {
 		font-size: 14px;
 	}
 
@@ -125,7 +128,7 @@ section {
 	#screen3{
 		padding-top: 148px;
 	}
-	.circle{
+	.bulat{
 		display: block !important;
 	}
 	.tombolDesktop{
@@ -140,7 +143,7 @@ section {
 	.dd {
 		height: 80% !important;
 	}
-	.circle{
+	.bulat{
 		display: block !important;
 	}
 	.tombolDesktop{
@@ -209,7 +212,7 @@ section {
   /* deded/ */
 
   .dd {
-	height: 100%;
+	height: 82%;
 	width: 100%;
 	margin: 50px auto;
 	border-radius: 7px 7px 7px 7px;
@@ -235,6 +238,7 @@ section {
 	width: 80%;
 	border-radius: 0 7px 10px 7px;
 	background-color: #ffffff;
+	text-align: center;
   }
   
 	.product-text {
@@ -244,7 +248,7 @@ section {
   
   .product-text h1 {
 	margin: 0 0 0 38px;
-	padding-top: 52px;
+	padding-top: 52px !important;
 	font-size: 34px;
 	color: #474747;
   }
@@ -317,10 +321,10 @@ section {
 		padding: 4px 15px;
 	}
 	.top-left {
-		padding-left: 12%;
 		position: absolute;
 		transform: rotate(-90deg) scaleX(-1);
 		transform-origin: top left;
+		padding-left: 7% !important;
 	}
 	.top-left .content {
 		transform: scaleX(-1);
@@ -614,7 +618,7 @@ section {
   display: table-cell;
   vertical-align: middle;
 }
-.circle {
+.bulat {
   display: none;
   width: 40px;
   height: 40px;
@@ -730,22 +734,4 @@ section {
 
 
 
-
-  /* ;frfrffaea */
-
-
-  .kontainer-peserta {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 300px;
-	background-color: DodgerBlue;
-  }
-  
-  .kontainer-peserta>div {
-	background-color: #f1f1f1;
-	color: white;
-	width: 100px;
-	height: 100px;
-	margin: 10px;
-  }
+	
