@@ -115,6 +115,7 @@ section {
 	}
 	.product-info{
 		width: 100% !important;
+		border-radius: 11px 7px 10px 7px !important;
 	}
 	.detail_acara{
 		height: auto;
@@ -124,6 +125,7 @@ section {
 	}
 	#screen2{
 		height: 152vh !important;
+		padding: 18px !important;
 	}
 	#screen3{
 		padding-top: 148px;
@@ -133,6 +135,9 @@ section {
 	}
 	.tombolDesktop{
 		display: none !important;
+	}
+	.demo-text{
+		font-size: 3em;
 	}
 }
 
@@ -148,6 +153,9 @@ section {
 	}
 	.tombolDesktop{
 		display: none !important;
+	}
+	.demo-text{
+		font-size: 3em;
 	}
 }
 
