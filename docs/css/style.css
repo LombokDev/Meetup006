@@ -354,9 +354,9 @@ section {
 		left: 50%;
 		top: 50%;
 		height: 2px;
-		background: linear-gradient(-45deg, rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+		background: linear-gradient(-45deg, black, rgba(0, 0, 255, 0));
 		border-radius: 999px;
-		filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+		filter: drop-shadow(0 0 6px rgb(42, 57, 88));
 		animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 	}
 	.shooting_star::before, .shooting_star::after {
@@ -365,7 +365,7 @@ section {
 		top: calc(50% - 1px);
 		right: 0;
 		height: 2px;
-		background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+		background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgb(46, 54, 73), rgba(0, 0, 255, 0));
 		transform: translateX(50%) rotateZ(45deg);
 		border-radius: 100%;
 		animation: shining 3000ms ease-in-out infinite;
@@ -858,8 +858,8 @@ section {
 		width: 100%;
 	}
 	.media {
-		background-position: center;
-		background-size: cover;
+		/* background-position: center; */
+		/* background-size: cover; */
 		height: 100%;
 		position: absolute;
 		transition: all 0.3s ease;
@@ -869,6 +869,7 @@ section {
 		height: 89%;
 		overflow: hidden;
 		position: relative;
+		
 	}
 	figure a {
 		height: 100%;
@@ -877,6 +878,7 @@ section {
 	}
 	figure:hover .media {
 		transform: scale(1.25);
+		/* transform: rotate(90deg); */
 	}
 	figcaption {
 		color: #252830;
@@ -885,7 +887,7 @@ section {
 		left: 0;
 		position: absolute;
 		top: 0;
-		width: 60%;
+		width: 45%;
 	}
 	.materinya {
 		background-color: white;
@@ -923,4 +925,5 @@ section {
 		width: 100%;
 		height: 36%;
 	}
+
 
