@@ -139,18 +139,21 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <script>
-   $(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
+
+	let stateCheck = setInterval(() => {
+  if (document.readyState === 'complete') {
+		window.addEventListener('scroll', function(e) {
+			 var navHeight = window.innerHeight - 70;
 			 if ($(window).scrollTop() > navHeight) {
-				 alert("google")
 				 $('.menunya').addClass('fixed');
 			 }
 			 else {
 				 $('.menunya').removeClass('fixed');
 			 }
 		});
-	});
+    clearInterval(stateCheck);
+  }
+}, 100);
 	 // use new shinejs.Shine(...) if Shine is already defined somewhere else
       // var shine = new shinejs.Shine(document.getElementById("headline"));
       var shine = new Shine(document.getElementById('headline'));
