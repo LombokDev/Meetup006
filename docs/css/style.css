@@ -70,12 +70,12 @@ section {
 }
 
 #screen2 {
-	background: #efc94d;
+	background: #6768a2;
 	padding: 10%;
 }
 
 #screen3 {
-	background: #e1793d;
+	/* background: #e1793d; */
 }
 
 #screen4 {
@@ -100,9 +100,53 @@ section {
 		font-size: 14px;
 	}
 
+	span{
+		font-size: 30px;
+	}
+
+	ul{
+		background: white
+	}
+	.product-img{
+		display: none;
+	}
+	.product-info{
+		width: 100% !important;
+	}
+	.detail_acara{
+		height: auto;
+	}
+	.dd{
+		height: 94% !important;
+	}
+	#screen2{
+		height: 152vh !important;
+	}
+	#screen3{
+		padding-top: 148px;
+	}
+	.circle{
+		display: block !important;
+	}
+	.tombolDesktop{
+		display: none !important;
+	}
 }
 
-
+@media only screen and (max-width: 400px) {
+	.detail_acara{
+		font-size: medium !important
+	}
+	.dd {
+		height: 80% !important;
+	}
+	.circle{
+		display: block !important;
+	}
+	.tombolDesktop{
+		display: none !important;
+	}
+}
 
 /* hdeud */
 
@@ -125,13 +169,14 @@ section {
   
   } 
   .slide2 {
-	background: url('../img/lombok_dev.png')no-repeat center;
+	/* background: url('../img/lombok_dev.png')no-repeat center; */
+	background: green no-repeat center;
 		background-size: cover;
-	  animation:fade2 20s infinite;
-  -webkit-animation:fade2 20s infinite;
+	  animation:fade2 8s infinite;
+  -webkit-animation:fade2 2s infinite;
   }
   .slide3 {
-	background: url('../img/lombok_dev.png')no-repeat center;
+	background: url('../img/lombok_dev.jpg')no-repeat center;
 		background-size: cover;
 	  animation:fade3 20s infinite;
   -webkit-animation:fade3 20s infinite;
@@ -192,10 +237,10 @@ section {
 	background-color: #ffffff;
   }
   
-  .product-text {
-	height: 84%;
-	width: 95%;
-  }
+	.product-text {
+    height: 84%;
+    width: 81%;
+	}
   
   .product-text h1 {
 	margin: 0 0 0 38px;
@@ -220,12 +265,11 @@ section {
   }
   
   .product-text p {
-	height: 125px;
 	margin: 0 0 0 38px;
 	font-family: 'Playfair Display', serif;
 	color: #8d8d8d;
 	line-height: 1.7em;
-	font-size: 15px;
+	font-size: 22px;
 	font-weight: lighter;
 	overflow: hidden;
   }
@@ -237,24 +281,6 @@ section {
 	position: relative;
   }
   
-  .product-price-btn p {
-	display: inline-block;
-	position: absolute;
-	top: -13px;
-	height: 50px;
-	font-family: 'Trocchi', serif;
-	margin: 0 0 0 38px;
-	font-size: 28px;
-	font-weight: lighter;
-	color: #474747;
-  }
-  
-  span {
-	display: inline-block;
-	height: 50px;
-	font-family: 'Suranna', serif;
-	/* font-size: 34px; */
-  }
   
   .product-price-btn button {
 	float: right;
@@ -278,4 +304,448 @@ section {
   
   .product-price-btn button:hover {
 	background-color: #79b0a1;
+	}
+	
+
+
+	/* deded */
+
+
+	.label {
+		color: black;
+		font-size: 28px;
+		padding: 4px 15px;
+	}
+	.top-left {
+		padding-left: 12%;
+		position: absolute;
+		transform: rotate(-90deg) scaleX(-1);
+		transform-origin: top left;
+	}
+	.top-left .content {
+		transform: scaleX(-1);
+	}
+
+
+/* kokok */
+
+
+	.night {
+		left: -367px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		transform: rotateZ(45deg);
+	}
+	.shooting_star {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 2px;
+		background: linear-gradient(-45deg, rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+		border-radius: 999px;
+		filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+		animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+	}
+	.shooting_star::before, .shooting_star::after {
+		content: '';
+		position: absolute;
+		top: calc(50% - 1px);
+		right: 0;
+		height: 2px;
+		background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+		transform: translateX(50%) rotateZ(45deg);
+		border-radius: 100%;
+		animation: shining 3000ms ease-in-out infinite;
+	}
+	.shooting_star::after {
+		transform: translateX(50%) rotateZ(-45deg);
+	}
+	.shooting_star:nth-child(1) {
+		top: calc(50% - -3px);
+		left: calc(50% - 92px);
+		animation-delay: 6899ms;
+	}
+	.shooting_star:nth-child(1)::before, .shooting_star::after:nth-child(1), .shooting_star:nth-child(1)::after {
+		animation-delay: 6899ms;
+	}
+	.shooting_star:nth-child(2) {
+		top: calc(50% - 170px);
+		left: calc(50% - 138px);
+		animation-delay: 5943ms;
+	}
+	.shooting_star:nth-child(2)::before, .shooting_star::after:nth-child(2), .shooting_star:nth-child(2)::after {
+		animation-delay: 5943ms;
+	}
+	.shooting_star:nth-child(3) {
+		top: calc(50% - 135px);
+		left: calc(50% - 173px);
+		animation-delay: 8818ms;
+	}
+	.shooting_star:nth-child(3)::before, .shooting_star::after:nth-child(3), .shooting_star:nth-child(3)::after {
+		animation-delay: 8818ms;
+	}
+	.shooting_star:nth-child(4) {
+		top: calc(50% - -49px);
+		left: calc(50% - 220px);
+		animation-delay: 9544ms;
+	}
+	.shooting_star:nth-child(4)::before, .shooting_star::after:nth-child(4), .shooting_star:nth-child(4)::after {
+		animation-delay: 9544ms;
+	}
+	.shooting_star:nth-child(5) {
+		top: calc(50% - 45px);
+		left: calc(50% - 288px);
+		animation-delay: 222ms;
+	}
+	.shooting_star:nth-child(5)::before, .shooting_star::after:nth-child(5), .shooting_star:nth-child(5)::after {
+		animation-delay: 222ms;
+	}
+	.shooting_star:nth-child(6) {
+		top: calc(50% - 195px);
+		left: calc(50% - 70px);
+		animation-delay: 3559ms;
+	}
+	.shooting_star:nth-child(6)::before, .shooting_star::after:nth-child(6), .shooting_star:nth-child(6)::after {
+		animation-delay: 3559ms;
+	}
+	.shooting_star:nth-child(7) {
+		top: calc(50% - -147px);
+		left: calc(50% - 260px);
+		animation-delay: 2917ms;
+	}
+	.shooting_star:nth-child(7)::before, .shooting_star::after:nth-child(7), .shooting_star:nth-child(7)::after {
+		animation-delay: 2917ms;
+	}
+	.shooting_star:nth-child(8) {
+		top: calc(50% - -55px);
+		left: calc(50% - 215px);
+		animation-delay: 6267ms;
+	}
+	.shooting_star:nth-child(8)::before, .shooting_star::after:nth-child(8), .shooting_star:nth-child(8)::after {
+		animation-delay: 6267ms;
+	}
+	.shooting_star:nth-child(9) {
+		top: calc(50% - -103px);
+		left: calc(50% - 293px);
+		animation-delay: 837ms;
+	}
+	.shooting_star:nth-child(9)::before, .shooting_star::after:nth-child(9), .shooting_star:nth-child(9)::after {
+		animation-delay: 837ms;
+	}
+	.shooting_star:nth-child(10) {
+		top: calc(50% - -96px);
+		left: calc(50% - 153px);
+		animation-delay: 4033ms;
+	}
+	.shooting_star:nth-child(10)::before, .shooting_star::after:nth-child(10), .shooting_star:nth-child(10)::after {
+		animation-delay: 4033ms;
+	}
+	.shooting_star:nth-child(11) {
+		top: calc(50% - 154px);
+		left: calc(50% - 193px);
+		animation-delay: 5675ms;
+	}
+	.shooting_star:nth-child(11)::before, .shooting_star::after:nth-child(11), .shooting_star:nth-child(11)::after {
+		animation-delay: 5675ms;
+	}
+	.shooting_star:nth-child(12) {
+		top: calc(50% - 40px);
+		left: calc(50% - 184px);
+		animation-delay: 9366ms;
+	}
+	.shooting_star:nth-child(12)::before, .shooting_star::after:nth-child(12), .shooting_star:nth-child(12)::after {
+		animation-delay: 9366ms;
+	}
+	.shooting_star:nth-child(13) {
+		top: calc(50% - 175px);
+		left: calc(50% - 215px);
+		animation-delay: 9862ms;
+	}
+	.shooting_star:nth-child(13)::before, .shooting_star::after:nth-child(13), .shooting_star:nth-child(13)::after {
+		animation-delay: 9862ms;
+	}
+	.shooting_star:nth-child(14) {
+		top: calc(50% - 68px);
+		left: calc(50% - 282px);
+		animation-delay: 7852ms;
+	}
+	.shooting_star:nth-child(14)::before, .shooting_star::after:nth-child(14), .shooting_star:nth-child(14)::after {
+		animation-delay: 7852ms;
+	}
+	.shooting_star:nth-child(15) {
+		top: calc(50% - 47px);
+		left: calc(50% - 91px);
+		animation-delay: 639ms;
+	}
+	.shooting_star:nth-child(15)::before, .shooting_star::after:nth-child(15), .shooting_star:nth-child(15)::after {
+		animation-delay: 639ms;
+	}
+	.shooting_star:nth-child(16) {
+		top: calc(50% - -156px);
+		left: calc(50% - 279px);
+		animation-delay: 2121ms;
+	}
+	.shooting_star:nth-child(16)::before, .shooting_star::after:nth-child(16), .shooting_star:nth-child(16)::after {
+		animation-delay: 2121ms;
+	}
+	.shooting_star:nth-child(17) {
+		top: calc(50% - -104px);
+		left: calc(50% - 244px);
+		animation-delay: 7390ms;
+	}
+	.shooting_star:nth-child(17)::before, .shooting_star::after:nth-child(17), .shooting_star:nth-child(17)::after {
+		animation-delay: 7390ms;
+	}
+	.shooting_star:nth-child(18) {
+		top: calc(50% - -33px);
+		left: calc(50% - 70px);
+		animation-delay: 8208ms;
+	}
+	.shooting_star:nth-child(18)::before, .shooting_star::after:nth-child(18), .shooting_star:nth-child(18)::after {
+		animation-delay: 8208ms;
+	}
+	.shooting_star:nth-child(19) {
+		top: calc(50% - -153px);
+		left: calc(50% - 178px);
+		animation-delay: 112ms;
+	}
+	.shooting_star:nth-child(19)::before, .shooting_star::after:nth-child(19), .shooting_star:nth-child(19)::after {
+		animation-delay: 112ms;
+	}
+	.shooting_star:nth-child(20) {
+		top: calc(50% - -56px);
+		left: calc(50% - 186px);
+		animation-delay: 6067ms;
+	}
+	.shooting_star:nth-child(20)::before, .shooting_star::after:nth-child(20), .shooting_star:nth-child(20)::after {
+		animation-delay: 6067ms;
+	}
+	@keyframes tail {
+		0% {
+			width: 0;
+		}
+		30% {
+			width: 100px;
+		}
+		100% {
+			width: 0;
+		}
+	}
+	@keyframes shining {
+		0% {
+			width: 0;
+		}
+		50% {
+			width: 30px;
+		}
+		100% {
+			width: 0;
+		}
+	}
+	@keyframes shooting {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(300px);
+		}
+	}
+	@keyframes sky {
+		0% {
+			transform: rotate(45deg);
+		}
+		100% {
+			transform: rotate(405deg);
+		}
+	}
+	
+/* d,ede */
+
+	::-webkit-scrollbar {
+		width: 1px;
+		height: 1px;
+	}
+	::-webkit-scrollbar-button {
+		width: 1px;
+		height: 1px;
+	}
+	.horizontal-scroll-wrapper {
+		display: block;
+		width: calc(450px + 1px);
+		max-height: 750px;
+		margin: 0;
+		padding-top: 1px;
+		background: #abc;
+		overflow-y: auto;
+		overflow-x: hidden;
+		transform: rotate(-90deg) translateY(-250px);
+		transform-origin: right top;
+	}
+	.horizontal-scroll-wrapper > div {
+		display: block;
+		padding: 5px;
+		background: #cab;
+		transform: rotate(90deg);
+		transform-origin: right top;
+	}
+	.squares {
+		padding: 250px 0 0 0;
+	}
+	.squares > div {
+		width: 250px;
+		height: 250px;
+		margin: 10px 0;
+	}
+	
+
+
+	/* /dededed/ */
+
+.tablediv {
+  display: table;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.tablediv .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.circle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #818181;
+  border-radius: 50%;
+  background: rgb(243, 82, 33);
+  margin: 0 auto;
+  font-size: 16px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  z-index: 92;
+}
+.nveMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  transform: translateX(-320px);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  padding: 40px 20px;
+}
+.nveMenu.is-opened {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.nveMenu h1 {
+  color: #000;
+  font-weight: 700;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 320px);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.71);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.overlay.is-on {
+  opacity: 1;
+  visibility: visible;
+}
+.navlinks li {
+  display: block;
+  padding: 12px 0;
+}
+.navlinks li a {
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+}
+.navlinks li a:hover {
+  text-decoration: none;
+}
+
+
+/* deded */
+
+.kartu_perserta {
+	color: black;
+	display: inline-block;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+	margin: 20px;
+	position: relative;
+	margin-bottom: 50px;
+	transition: all .2s ease-in-out;
+  }
+  
+  .kartu_perserta:hover {
+	/*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin-bottom: 54px;
+  }
+  
+  .imagenya {
+	height: 200px;
+	opacity: .7;
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+  }
+  
+  .imagenya:hover,
+  .kartu_perserta:hover .image {
+	height: 200px;
+	opacity: 1;
+  }
+  
+  .kartu_perserta:hover {
+	transform: rotate( 2deg ) ;
+	transition: transform 0.5s;
+  }
+  
+  .textnya {
+	background: #FFF;
+	padding: 20px;
+	min-height: 200px;
+  }
+  
+  .textnya p {
+	margin-bottom: 0px;
+  }
+
+
+
+
+  /* ;frfrffaea */
+
+
+  .kontainer-peserta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background-color: DodgerBlue;
+  }
+  
+  .kontainer-peserta>div {
+	background-color: #f1f1f1;
+	color: white;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
   }
