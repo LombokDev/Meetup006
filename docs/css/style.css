@@ -92,8 +92,28 @@ section {
 #screen6 {
 	background: #d49ad2;
 }
-
+.sembunyi-desktop{
+	display: none
+}
+@media only screen and (min-width: 1000px) {
+	#screen8{
+		background: red !important;
+		display: none;
+	}
+}
 @media only screen and (max-width: 520px) {
+	.sembunyi-desktop{
+		background: #23232b;
+		display: block;
+	}
+
+	.iphone{
+		display: none !important
+	}
+
+	.card-content {
+		height: 148px !important;
+	}
 
 	.menunya li {
 		padding: 24px 4px;
@@ -128,7 +148,10 @@ section {
 		padding: 18px !important;
 	}
 	#screen3{
-		padding-top: 148px;
+		height: 166vh !important;
+	}
+	.waktu-dan-tempat{
+		margin: 0px !important;
 	}
 	.bulat{
 		display: block !important;
@@ -145,6 +168,17 @@ section {
 	#screen7{
 		display: block;
 	}
+	.waktu{
+		width: 100% !important
+	}
+	.mapouter{margin-top: 16px;}
+	.textmateri{width: 100% !important}
+}
+
+@media only screen and (max-width: 320px) {
+	.mapouter{height: 350px !important;}
+	.background-zoom{display: none !important}
+	.iphone{display: block !important}
 }
 
 @media only screen and (max-width: 520px) {
@@ -153,6 +187,12 @@ section {
 	}
 	#screen7{
 		display: block;
+	}
+}
+
+@media only screen and (min-width: 520px) {
+	.card-detail{
+		margin: 10px;
 	}
 }
 
@@ -712,54 +752,6 @@ section {
 }
 
 
-/* deded */
-
-.kartu_perserta {
-	color: black;
-	display: inline-block;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
-	margin: 20px;
-	position: relative;
-	margin-bottom: 50px;
-	transition: all .2s ease-in-out;
-  }
-  
-  .kartu_perserta:hover {
-	/*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	margin-bottom: 54px;
-  }
-  
-  .imagenya {
-	height: 200px;
-	opacity: .7;
-	overflow: hidden;
-	transition: all .2s ease-in-out;
-  }
-  
-  .imagenya:hover,
-  .kartu_perserta:hover .image {
-	height: 200px;
-	opacity: 1;
-  }
-  
-  .kartu_perserta:hover {
-	transform: rotate( 2deg ) ;
-	transition: transform 0.5s;
-  }
-  
-  .textnya {
-	background: #FFF;
-	padding: 20px;
-	min-height: 200px;
-  }
-  
-  .textnya p {
-	margin-bottom: 0px;
-  }
-
-
-
 /* mmfrfmr */
 
 
@@ -941,8 +933,100 @@ line-height: 1em;
 }
 
 #screen8{
+	background: #4e3b3b;
+	/* display: none */
+}
+#screen13{
+	background: #296f46cf;
 	display: flex;
 	justify-content: center;
-	padding-top: 100px !important
 }
 
+.sembunyi{
+	display: none !important;
+}
+
+
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+		background-color: #fff;
+		border-radius: 0px !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px !important;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+.card-pemateri{
+	padding: 10% !important;
+	padding-top: 0px !important;
+	justify-content: center;
+	width: 100%;
+}
+
+.img-thumbnail{border-radius: 0px !important}
+.tengah{display: flex; justify-content: center}
+.setengah-atas{padding: 30% !important}
+
+
+/* dekjde,ijd */
+
+.example_e {
+	border: none;
+	background: #404040;
+	color: #ffffff !important;
+	font-weight: 100;
+	padding: 20px !important;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	}
+
+	.example_e:hover {
+		color: #404040 !important;
+		font-weight: 700 !important;
+		letter-spacing: 3px;
+		background: none;
+		-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+		-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+		transition: all 0.3s ease 0s;
+		}
