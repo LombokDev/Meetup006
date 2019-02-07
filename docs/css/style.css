@@ -142,11 +142,17 @@ section {
 	#screen5{
 		height: 111vh;
 	}
+	#screen7{
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 520px) {
 	#screen5{
 		height: 111vh !important;
+	}
+	#screen7{
+		display: block;
 	}
 }
 
@@ -165,6 +171,9 @@ section {
 	}
 	.demo-text{
 		font-size: 3em;
+	}
+	#screen7{
+		display: block;
 	}
 }
 
@@ -751,167 +760,189 @@ section {
 
 
 
-	/* mmfrfmr */
+/* mmfrfmr */
 
 
-	.card-group {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: stretch;
-	}
-	.card-container {
-		flex: 1;
-		margin: 20px;
-	/*   max-width: 400px; */
-		max-width:100%;
-		background: rgb(255,255,255);
-		background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
-		-webkit-box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
-		-moz-box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
-		box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
-	}
-	.card-profile .card-container {
-		min-width:400px;
-		max-width:400px;
-		
-	}
-	.card-bg-img {
-		display: block;
-		min-height: 120px;
-	}
-	.card-profile-img {
-		position: relative;
-	}
-	.card-profile-img > img {
-		height:100px;
-		width:100px;
-		border-radius: 50%;
-		border: 2px solid white;
-		position: absolute;
-		top: -50px;
-		left: 15px;
-	}
-	.card-heading {
-		padding: 10px 30px 0;
-		min-height: 50px;
-	}
-	.card-profile .card-heading {
-		margin-left: calc(100px + 15px);
-	}
-	.card-title, 
-	.card-subtitle {
-		display:block;
-		padding-top: 5px;
-	}
-	.card-title { 
-		font-size: 1.25rem;
-	}
-	.card-body {
-		padding: 20px 30px 30px;
-	}
+.card-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: stretch;
+}
+.card-container {
+	flex: 1;
+	margin: 20px;
+/*   max-width: 400px; */
+	max-width:100%;
+	background: rgb(255,255,255);
+	background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+	-webkit-box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
+	box-shadow: 0 4px 10px rgba(0,0,0,.4), 0 5px 15px rgba(0,0,0,.1);
+}
+.card-profile .card-container {
+	min-width:400px;
+	max-width:400px;
 	
-	.bg1 {
-		background: url(https://placeimg.com/300/150/nature);
-		background-size: cover;
-	}
-	.bg2 {
-		background: url(https://placeimg.com/300/150/arch);
-		background-size: cover;
-	}
-	.bg3 {
-		background: url(https://placeimg.com/300/150/animals);
-		background-size: cover;
-	}
-	.bg4 {
-		background: url(https://placeimg.com/300/150/tech);
-		background-size: cover;
-	}
+}
+.card-bg-img {
+	display: block;
+	min-height: 120px;
+}
+.card-profile-img {
+	position: relative;
+}
+.card-profile-img > img {
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: absolute;
+	top: -50px;
+	left: 15px;
+}
+.card-heading {
+	padding: 10px 30px 0;
+	min-height: 50px;
+}
+.card-profile .card-heading {
+	margin-left: calc(100px + 15px);
+}
+.card-title, 
+.card-subtitle {
+	display:block;
+	padding-top: 5px;
+}
+.card-title { 
+	font-size: 1.25rem;
+}
+.card-body {
+	padding: 20px 30px 30px;
+}
+
+.bg1 {
+	background: url(https://placeimg.com/300/150/nature);
+	background-size: cover;
+}
+.bg2 {
+	background: url(https://placeimg.com/300/150/arch);
+	background-size: cover;
+}
+.bg3 {
+	background: url(https://placeimg.com/300/150/animals);
+	background-size: cover;
+}
+.bg4 {
+	background: url(https://placeimg.com/300/150/tech);
+	background-size: cover;
+}
 
 
-	/* materi */
+/* materi */
 
 
-	.materi {
-		height: 100vw;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-family: 'Lato', sans-serif;
-		line-height: 1.4;
-		color: #ffdebd;
-		margin: 1rem;
-		height: 100vh;
-		overflow: hidden;
-	}
-	.module {
-		max-width: 400px;
-		padding: 3rem;
-		background: #f06d06;
-	}
-	.module h2 {
-		color: white;
-		margin: 0 0 1rem 0;
-		font-family: 'Roboto', sans-serif;
-	}
-	.module p {
-		margin: 0;
-	}
+.materi {
+	height: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.4;
+	color: #ffdebd;
+	margin: 1rem;
+	height: 100vh;
+	overflow: hidden;
+}
+.module {
+	max-width: 400px;
+	padding: 3rem;
+	background: #f06d06;
+}
+.module h2 {
+	color: white;
+	margin: 0 0 1rem 0;
+	font-family: 'Roboto', sans-serif;
+}
+.module p {
+	margin: 0;
+}
+
+
+.container-fluid {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	width: 100%;
+}
+.media {
+	/* background-position: center; */
+	/* background-size: cover; */
+	height: 100%;
+	position: absolute;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+figure {
+	height: 89%;
+	overflow: hidden;
+	position: relative;
 	
+}
+figure a {
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+}
+figure:hover .media {
+	transform: scale(1.25);
+	/* transform: rotate(90deg); */
+}
+figcaption {
+	color: #252830;
+	height: calc(100% - 30px);
+	margin: 15px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.materinya {
+	background-color: white;
+	bottom: 0;
+	padding: 15px;
+	position: absolute;
+	width: 100%;
+}
+.textmateri {
+	background-color: white;
+	bottom: 0;
+	padding: 36px !important;
+	position: absolute;
+	width: 97%;
+	height: 100%;
+}
 
-	.container-fluid {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translateY(-50%) translateX(-50%);
-		width: 100%;
-	}
-	.media {
-		/* background-position: center; */
-		/* background-size: cover; */
-		height: 100%;
-		position: absolute;
-		transition: all 0.3s ease;
-		width: 100%;
-	}
-	figure {
-		height: 89%;
-		overflow: hidden;
-		position: relative;
-		
-	}
-	figure a {
-		height: 100%;
-		width: 100%;
-		z-index: 3;
-	}
-	figure:hover .media {
-		transform: scale(1.25);
-		/* transform: rotate(90deg); */
-	}
-	figcaption {
-		color: #252830;
-		height: calc(100% - 30px);
-		margin: 15px;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-	.materinya {
-		background-color: white;
-		bottom: 0;
-		padding: 15px;
-		position: absolute;
-		width: 100%;
-	}
-	.textmateri {
-		background-color: white;
-		bottom: 0;
-		padding: 36px !important;
-		position: absolute;
-		width: 97%;
-		height: 100%;
-	}
 
+.ml15 {
+font-weight: 800;
+font-size: 3.8em;
+text-transform: uppercase;
+letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+display: inline-block;
+line-height: 1em;
+}
+
+#screen7{
+	display: none;
+}
+
+#screen8{
+	display: flex;
+	justify-content: center;
+	padding-top: 100px !important
+}
 
