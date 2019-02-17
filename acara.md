@@ -6,7 +6,7 @@
  |08.30 - 09.30 | Peserta           | Registrasi Ulang - Sarapan  |
  |09.35 - 09.50 | Darmawan Zulkifli | Getting started with docker |
  |09.55 - 10.10 | Dian A. Rahman    | Player Controller 2D        |
- |10.15 - 10.30 | Ahmad M. Lasmita  | Intro to Hugo Static Site Generator |
+ |10.15 - 10.30 | Ahmad Muhardian Lasmita  | Intro to Hugo Static Site Generator |
  |10.35 - 10.50 | Desi Ratna Ningsih| Recommender System |
  |10.55 - 11.10 | Hayi Nukman       | Penakluk Interview Kerja |
  |11.15 - 11.30 | Lalu Erfandi Maula Yusnu | Graph Database |
