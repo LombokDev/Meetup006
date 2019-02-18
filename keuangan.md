@@ -1,10 +1,16 @@
--e ## Rincian dana masuk
+## Rincian dana masuk
  | Sumber | Jumlah |
  |-----------------|---------------|
+ | Sumbangan Tarsius | Rp2000000 
+ | Awan DSC | Rp500000 |
  
- ## Rincian Pengeluaran
+## Rincian Pengeluaran
  
- ### Pengeluaran 1
- Detail dan bukti
- ### Pengeluaran 2 dan seterusnya
+### Pengeluaran 1
+Pembayaran Soetjipto Coffe 1.
+<img src="docs/img/invoice.jpg">
 
+## Sisa dana
+ | Sumber          | Jumlah |
+ |-----------------|---------------|
+ | Kas | Rp500000 |
